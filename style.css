@@ -4882,7 +4882,7 @@ section .section-devider {
 
 .BackgroundHero {
 	height: 100vh;
-	background-image: url(./images/Links/_AB18160.jpg);
+	background-image: url(./images/Links/png/_AB18160.png);
 	background-size: cover;
 	border-radius: 33%;
 	display: flex;
@@ -4894,7 +4894,7 @@ section .section-devider {
 .design5 {
 	height: 600px;
 	position: relative;
-	background-image: url(./images/Links/_AB181600.jpg);
+	background-image: url(./images/Links/png/_AB181600.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -5003,7 +5003,7 @@ section .section-devider {
 .landing {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url("./images/Links/_AB181600.jpg");
+	background-image: url(./images/Links/png/_AB181600.png);
 	background-size: cover;
 	border-radius: 30%;
 	position: relative;
@@ -5293,7 +5293,7 @@ section .section-devider {
 
 .landing1 {
 	min-height: 100vh;
-	background-image: url(./images/Links/_DSC26172.jpg);
+	background-image: url(./images/Links/png/_DSC26172.png);
 	background-size: 3000px;
 	position: relative;
 	margin-top: -100px;
@@ -5348,7 +5348,7 @@ section .section-devider {
 
 .landing2 {
 	min-height: 100vh;
-	background-image: url(./images/Links/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/Links/png/cat-han-W_5Eakb1598-unsplash.png);
 	background-size: cover;
 	position: relative;
 	margin-top: -100px;
@@ -5359,7 +5359,7 @@ section .section-devider {
 
 .stats {
 	text-align: center;
-	background-image: url(./images/Links/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/Links/png/cat-han-W_5Eakb1598-unsplash.png);
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -5415,7 +5415,7 @@ section .section-devider {
 
 .stats2 {
 	text-align: center;
-	background-image: url(./images/Links/_AB17858.jpg);
+	background-image: url(./images/Links/png/_AB17858.png);
 	position: relative;
 	display: flex;
 	height: 100vh;
