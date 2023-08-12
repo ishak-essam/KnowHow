@@ -4883,7 +4883,7 @@ section .section-devider {
 .BackgroundHero {
 	height: 100vh;
 	/* background-image: url(./images/Links/_AB18160.jpg); */
-	background-image: url(./images/Links/Newset/_AB181602.jpg);
+	background-image: url(./images/Links/Newset/_AB181602.png);
 
 	background-size: cover;
 	border-radius: 33%;
@@ -5008,7 +5008,7 @@ section .section-devider {
 	min-height: 500px;
 	background-color: #1f2021;
 	/* background-image: url(./images/Links/_AB181600.jpg); */
-	background-image: url(images/Links/_AB181602.jpg);
+	background-image: url(images/Links/_AB181602.png);
 	background-size: cover;
 	border-radius: 30%;
 	position: relative;
