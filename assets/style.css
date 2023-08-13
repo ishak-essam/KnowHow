@@ -4882,8 +4882,7 @@ section .section-devider {
 
 .BackgroundHero {
 	height: 100vh;
-	/* background-image: url(./images/Links/_AB18160.png); */
-	background-image: url(./images/Links/Newset/_AB181602.png);
+	background-image: url(./images/AB18160.png);
 	background-size: cover;
 	border-radius: 33%;
 	display: flex;
@@ -4896,7 +4895,7 @@ section .section-devider {
 	height: 600px;
 	position: relative;
 	background-image: url(./images/Links/BackUp/_AB181600.jpg);
-	background-image: url(./images/Links/BackUp/Test/test/_AB18160.png);
+	background-image: url(./images/AB18160.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -5298,6 +5297,7 @@ section .section-devider {
 .landing1 {
 	min-height: 100vh;
 	background-image: url(./images/Links/BackUp/_DSC26172.jpg);
+	background-image: url(./images/DSC26172.png);
 	background-size: 3000px;
 	position: relative;
 	margin-top: -100px;
@@ -5352,7 +5352,7 @@ section .section-devider {
 
 .landing2 {
 	min-height: 100vh;
-	background-image: url(./images/Links/BackUp/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/cat-han-W_5Eakb1598-unsplash.png);
 	background-size: cover;
 	position: relative;
 	margin-top: -100px;
@@ -5363,7 +5363,7 @@ section .section-devider {
 
 .stats {
 	text-align: center;
-	background-image: url(./images/Links/BackUp/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/cat-han-W_5Eakb1598-unsplash.png);
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -5420,6 +5420,7 @@ section .section-devider {
 .stats2 {
 	text-align: center;
 	background-image: url(./images/Links/BackUp/_AB17858.jpg);
+	background-image: url(./images/AB17858.png);
 	position: relative;
 	display: flex;
 	height: 100vh;
@@ -5438,6 +5439,7 @@ section .section-devider {
 
 .dots {
 	background-image: url(./images/Links/BackUp/bc.PNG);
+	background-image: url(./images/bc.PNG);
 	height: 186px;
 	width: 204px;
 	background-repeat: no-repeat;
@@ -5533,10 +5535,16 @@ section .section-devider {
 .LOCATION {
 	display: flex;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	justify-content: center;
 }
 
+.socials-icon2 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+}
 
 
 @media (min-width:800px) {
@@ -5549,4 +5557,33 @@ section .section-devider {
 	.socials-icon img {
 		padding: 10px 0px 0px 0px;
 	}
+}
+
+
+.social-icons2 i {
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+.social-icons2 {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: flex-end !important;
+	padding: 20px;
+}
+
+
+@media (max-width: 767px){
+	
+#rotate {
+    margin: 10px 0;
+    transform: rotate(0deg);
+}
+.landingConcepts .text {
+    flex: 1;
+    margin-top: 0px;
+    padding: 0px;
+}
 }
