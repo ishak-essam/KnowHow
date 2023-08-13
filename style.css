@@ -4884,7 +4884,6 @@ section .section-devider {
 	height: 100vh;
 	/* background-image: url(./images/Links/_AB18160.jpg); */
 	background-image: url(./images/Links/Newset/_AB181602.png);
-
 	background-size: cover;
 	border-radius: 33%;
 	display: flex;
@@ -4896,9 +4895,8 @@ section .section-devider {
 .design5 {
 	height: 600px;
 	position: relative;
-	background-image: url(./images/Links/_AB181600.jpg);
-	background-image: url(./images/Links/_ab18.jpg);
-
+	background-image: url(./images/Links/BackUp/_AB181600.jpg);
+	background-image: url(./images/Links/BackUp/Test/test/_AB18160.jpg);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -5008,7 +5006,7 @@ section .section-devider {
 	min-height: 500px;
 	background-color: #1f2021;
 	/* background-image: url(./images/Links/_AB181600.jpg); */
-	background-image: url(images/Links/_AB181602.png);
+	background-image: url(./images/Links/BackUp/Test/test/_AB18160.jpg);
 	background-size: cover;
 	border-radius: 30%;
 	position: relative;
@@ -5298,7 +5296,7 @@ section .section-devider {
 
 .landing1 {
 	min-height: 100vh;
-	background-image: url(./images/Links/_DSC26172.jpg);
+	background-image: url(./images/Links/BackUp/_DSC26172.jpg);
 	background-size: 3000px;
 	position: relative;
 	margin-top: -100px;
@@ -5353,7 +5351,7 @@ section .section-devider {
 
 .landing2 {
 	min-height: 100vh;
-	background-image: url(./images/Links/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/Links/BackUp/cat-han-W_5Eakb1598-unsplash.jpg);
 	background-size: cover;
 	position: relative;
 	margin-top: -100px;
@@ -5364,7 +5362,7 @@ section .section-devider {
 
 .stats {
 	text-align: center;
-	background-image: url(./images/Links/cat-han-W_5Eakb1598-unsplash.jpg);
+	background-image: url(./images/Links/BackUp/cat-han-W_5Eakb1598-unsplash.jpg);
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -5420,7 +5418,7 @@ section .section-devider {
 
 .stats2 {
 	text-align: center;
-	background-image: url(./images/Links/_AB17858.jpg);
+	background-image: url(./images/Links/BackUp/_AB17858.jpg);
 	position: relative;
 	display: flex;
 	height: 100vh;
@@ -5438,7 +5436,7 @@ section .section-devider {
 }
 
 .dots {
-	background-image: url(./images/Links/bc.PNG);
+	background-image: url(./images/Links/BackUp/bc.PNG);
 	height: 186px;
 	width: 204px;
 	background-repeat: no-repeat;
