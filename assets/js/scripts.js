@@ -2043,51 +2043,58 @@ jQuery(function ($) {
 
 });
 
+// let slideIndex = 0;
+// // showSlides();
+// showSlides();
 
-var LoadViaAjax = window.LoadViaAjax;
+// function showSlides() {
+// 	let i;
+// 	const slides = document.getElementsByClassName("slide");
 
+// 	// Hide all slides
+// 	for (i = 0; i < slides.length; i++) {
+// 		slides[i].style.display = "none";
+// 	}
 
+// 	// Increment slide index
+// 	slideIndex++;
 
-const words = document.querySelectorAll('.word');
-const wordCircle = document.querySelector('.word-circle');
-const duration = 10000; // Animation duration in milliseconds
+// 	// Reset slide index if it goes beyond the number of slides
+// 	if (slideIndex > slides.length) {
+// 		slideIndex = 1;
+// 	}
 
-const centerX = wordCircle.clientWidth / 2;
-const centerY = wordCircle.clientHeight / 2;
-const radius = wordCircle.clientWidth / 2 - 50; // Adjust as needed
+// 	// Display the current slide
+// 	slides[slideIndex - 1].style.display = "block";
 
-const angleIncrement = (2 * Math.PI) / words.length;
-let currentTime = 0;
+// 	// Call the function again after a certain interval
+// 	setTimeout(showSlides, 6000); // Change slide every 2 seconds
+// }
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector(".slides");
+    const slideItems = document.querySelectorAll(".slide");
+    const slideCount = slideItems.length;
+    const slideWidth = slideItems[0].clientWidth;
+    let currentSlide = 0;
 
-words.forEach((word, index) => {
-    const angle = index * angleIncrement;
-    const x = centerX + radius * Math.cos(angle);
-    const y = centerY + radius * Math.sin(angle);
-
-    word.style.left = x + 'px';
-    word.style.top = y + 'px';
-});
-
-function animateWords(timestamp) {
-    if (!currentTime) currentTime = timestamp;
-    const elapsedTime = timestamp - currentTime;
-
-    if (elapsedTime >= duration) {
-        currentTime = 0; // Reset for the next animation
-        return;
+    function showSlide(slideIndex) {
+      if (slideIndex < 0) {
+        slideIndex = slideCount - 1;
+      } else if (slideIndex >= slideCount) {
+        slideIndex = 0;
+      }
+      slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+	  console.log(slideIndex,slideWidth)
+	  console.log(slideItems[0].clientWidth,slideItems[0].clientWidth)
+      currentSlide = slideIndex;
     }
 
-    const rotationAngle = (elapsedTime / duration) * 2 * Math.PI;
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
 
-    words.forEach((word, index) => {
-        const angle = index * angleIncrement + rotationAngle;
-        const x = centerX + radius * Math.cos(angle);
-        const y = centerY + radius * Math.sin(angle);
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-        word.style.left = x + 'px';
-        word.style.top = y + 'px';
-    });
+    showSlide(currentSlide); // Show the initial slide
+  });
 
-    requestAnimationFrame(animateWords);
-}
-requestAnimationFrame(animateWords);
