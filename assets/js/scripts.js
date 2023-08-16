@@ -50,7 +50,7 @@ jQuery(function ($) {
 		// Page Navigation Events
 		$(".preloader-wrap").on('mouseenter', function () {
 			var $this = $(this);
-			gsap.to('#ball', { duration: 1.5, Image: URL('../images/Links/_AB17951.jpg'), borderWidth: '2px', scale: 1.2, borderColor: $("body").data('primary-color'), backgroundColor: $("body").data('primary-color') });
+			gsap.to('#ball', { duration: .2, Image: URL('../images/Links/_AB17951.jpg'), borderWidth: '2px', scale: 1.2, borderColor: $("body").data('primary-color'), backgroundColor: $("body").data('primary-color') });
 			gsap.to('#ball-loader', { duration: 0.2, borderWidth: '2px', top: 2, left: 2 });
 			$("#ball").append('<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>');
 		});
@@ -218,7 +218,7 @@ jQuery(function ($) {
 					}, label);
 
 					// Add some blank space before the next animation
-					swapSlide.to({}, { duration: 0.15 });
+					swapSlide.to({}, { duration: 0.05 });
 				}
 			})
 			swapSlide.play();
