@@ -4696,7 +4696,7 @@ a h5 {
 	height: 300px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url(./images/AB18160.png);
+	background-image: url(./images/_AB18160.png);
 	background-size: cover;
 }
 
@@ -4909,7 +4909,7 @@ section .section-devider {
 
 .BackgroundHero {
 	height: 100vh;
-	background-image: url(./images/AB18160.png);
+	background-image: url(./images/_AB18160.png);
 	background-size: cover;
 	border-radius: 33%;
 	display: flex;
@@ -4921,7 +4921,7 @@ section .section-devider {
 .design5 {
 	height: 600px;
 	position: relative;
-	background-image: url(./images/AB18160.png);
+	background-image: url(./images/_AB18160.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -5030,7 +5030,7 @@ section .section-devider {
 .landing {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/AB18160.png);
+	background-image: url(./images/_AB18160.png);
 	background-size: 1500px;
 	border-radius: 25%;
 	background-position: -70px -150px;
@@ -5040,7 +5040,7 @@ section .section-devider {
 .landing11 {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/AB18021.png);
+	background-image: url(./images/_AB18021.png);
 	background-size: cover;
 	border-radius: 25%;
 	background-position: 50%;
@@ -5050,7 +5050,7 @@ section .section-devider {
 .landing111 {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/AB17951.png);
+	background-image: url(./images/_AB17813.jpg);
 	background-size: cover;
 	border-radius: 25%;
 	background-position: 50%;
@@ -5555,7 +5555,7 @@ section .section-devider {
 		margin: 5px;
 		flex-basis: 47%;
 	}
-	
+
 }
 
 @media (min-width: 992px) {
@@ -5683,7 +5683,7 @@ section .section-devider {
 
 }
 
- .text .content h2 {
+.text .content h2 {
 	font-size: 32px;
 	font-weight: normal;
 	line-height: 1.5;
@@ -5912,22 +5912,27 @@ section .section-devider {
 	display: flex;
 	align-items: center;
 }
+
 @media (max-width:481px) {
 	.our-skills .container {
 		display: block;
 	}
-	.our-skills .container div{
+
+	.our-skills .container div {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.stats3 p {
 		padding: 0px 5%;
 	}
+
 	.text .content h2 {
 		font-size: 24px;
 	}
 }
+
 @media (max-width:771px) {
 	.our-skills .container {
 		padding: 0px;
@@ -6015,7 +6020,7 @@ section .section-devider {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	margin-top: 64px;
+	/* margin-top: 64px; */
 	margin-right: 15px;
 	margin-left: 15px;
 	padding-top: 24px;
@@ -6067,10 +6072,7 @@ section .section-devider {
 	}
 }
 
-.footer-bottom-link-right {
-	margin-left: 24px;
-	color: #111;
-}
+
 
 @media screen and (max-width: 767px) {
 	.footer-bottom-link-right {
@@ -6078,10 +6080,7 @@ section .section-devider {
 	}
 }
 
-.footer-bottom-link-right {
-	margin-left: 24px;
-	color: #111;
-}
+
 
 @media screen and (max-width: 479px) {
 	.footer-bottom-link-right {
@@ -6097,6 +6096,44 @@ section .section-devider {
 
 }
 
-.footer-bottom-link-right img{
+.footer-bottom-link-right img {
 	max-height: 50px;
+	margin-right: 24px;
+}
+
+
+.loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-top: 16px solid #000;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	/* Safari */
+	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
