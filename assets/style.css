@@ -4696,7 +4696,7 @@ a h5 {
 	height: 300px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url(./images/_AB18160.png);
+	background-image: url(./images/AB18160.png);
 	background-size: cover;
 }
 
@@ -4765,7 +4765,7 @@ a h5 {
 
 @media only screen and (max-width: 760px) {
 	.main__form {
-		background-image: url(./images/_AB18160.png);
+		background-image: url(./images/AB18160.png);
 	}
 }
 
@@ -4909,7 +4909,7 @@ section .section-devider {
 
 .BackgroundHero {
 	height: 100vh;
-	background-image: url(./images/_AB18160.png);
+	background-image: url(./images/AB18160.png);
 	background-size: cover;
 	border-radius: 33%;
 	display: flex;
@@ -4921,7 +4921,7 @@ section .section-devider {
 .design5 {
 	height: 600px;
 	position: relative;
-	background-image: url(./images/_AB18160.png);
+	background-image: url(./images/AB18160.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -5030,7 +5030,7 @@ section .section-devider {
 .landing {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/_AB18160.png);
+	background-image: url(./images/AB18160.png);
 	background-size: 1500px;
 	border-radius: 25%;
 	background-position: -70px -150px;
@@ -5040,7 +5040,7 @@ section .section-devider {
 .landing11 {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/_AB18021.png);
+	background-image: url(./images/AB18021.png);
 	background-size: cover;
 	border-radius: 25%;
 	background-position: 50%;
@@ -5050,7 +5050,7 @@ section .section-devider {
 .landing111 {
 	min-height: 500px;
 	background-color: #1f2021;
-	background-image: url(./images/_AB17813.jpg);
+	background-image: url(./images/DSC2731.png);
 	background-size: cover;
 	border-radius: 25%;
 	background-position: 50%;
