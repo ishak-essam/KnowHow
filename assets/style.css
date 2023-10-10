@@ -5477,8 +5477,9 @@ section .section-devider {
 }
 
 .stats2 h1 {
-	position: absolute;
 	/* left: -25%; */
+	float: left;
+	padding: 1em;
 	font-size: 3em;
 	text-align: right;
 }
@@ -6136,4 +6137,49 @@ section .section-devider {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+@media (max-width:750px) {
+	.stats2 h1 {
+		position: absolute;
+		left: -45%;
+		top: 10%;
+		font-size: 3em;
+		z-index: 1000;
+		text-align: right;
+	}
+
+	.stats2 .container p {
+		width: 150%;
+		padding: 10px !important;
+		line-height: 15px;
+		font-size: 13px;
+		left: 30%;
+		position: absolute;
+		top: 66%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (min-width:751px) {
+	.stats2 .container p {
+		text-align: left;
+		max-width: 75%;
+	}
+}
+
+.stats2 .container p {
+	text-align: left;
+}
+
+.carousel-caption {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	background: rgba(61, 70, 77, 0.5);
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
 }
