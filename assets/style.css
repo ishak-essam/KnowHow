@@ -5481,7 +5481,7 @@ section .section-devider {
 	float: left;
 	padding: 1em;
 	font-size: 3em;
-	text-align: right;
+	text-align: left;
 }
 
 .dots-down {
@@ -6146,17 +6146,18 @@ section .section-devider {
 		top: 10%;
 		font-size: 3em;
 		z-index: 1000;
-		text-align: right;
+		text-align: left;
 	}
 
 	.stats2 .container p {
-		width: 150%;
+		width: 140%;
+		text-align: justify !important;
 		padding: 10px !important;
 		line-height: 15px;
-		font-size: 13px;
+		font-size: 12px;
 		left: 30%;
 		position: absolute;
-		top: 66%;
+		top: 70%;
 		transform: translate(-50%, -50%);
 	}
 }
@@ -6169,7 +6170,7 @@ section .section-devider {
 }
 
 .stats2 .container p {
-	text-align: left;
+	text-align: justify;
 }
 
 .carousel-caption {
