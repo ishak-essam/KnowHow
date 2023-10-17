@@ -47,6 +47,20 @@ Primary use:	Showcase Portfolio
 	src: url("NexaThin.otf") format("otf"),
 }
 
+@font-face {
+	font-family: 'thin';
+	font-style: normal;
+	src: local(''),
+		url('./webfonts/Lato-Thin.ttf') format('ttf'),
+}
+
+@font-face {
+	font-family: "thinn";
+	src: url("./webfonts/Lato-Thin.ttf") format("ttf"),
+		url("./webfonts/Lato-Thin.ttf") format("ttf");
+
+
+}
 
 /*------------------------------------------------------------------
 
@@ -67,7 +81,7 @@ Primary use:	Showcase Portfolio
 
 html,
 body {
-	font-family: 'Lato Regular', sans-serif;
+	font-family: sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	height: 100%;
@@ -5471,8 +5485,9 @@ section .section-devider {
 	margin: -100px 0px;
 	align-items: center;
 	justify-content: center;
-	background-size: 800px;
+	background-size: 1285px;
 	background-position: 0px -300px;
+	/* width: 100%; */
 	margin-left: 30%;
 }
 
@@ -5951,11 +5966,12 @@ section .section-devider {
 }
 
 .our-skills .skill h1 {
+	font-family: 'Lato Regular';
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 6em;
-	font-family: "Hairline";
+	opacity: .7;
 }
 
 .our-skills img {
@@ -6153,7 +6169,7 @@ section .section-devider {
 		width: 140%;
 		text-align: justify !important;
 		padding: 10px !important;
-		line-height: 15px;
+		line-height: 20px;
 		font-size: 12px;
 		left: 30%;
 		position: absolute;
@@ -6183,4 +6199,55 @@ section .section-devider {
 	z-index: 1;
 	justify-content: center;
 	align-items: center;
+}
+
+.imagebc {
+	position: absolute;
+	left: -50%;
+	float: left;
+	height: 70px;
+	background-image: url(./images/Capture-removebg-preview.png);
+	width: 85%;
+	top: 80%;
+}
+
+@media (max-width:900px) {
+	.imagebc {
+		display: none;
+	}
+}
+
+.imagepreloader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 100vh;
+}
+
+.imagepreloader2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.img1 img {
+	max-width: 500px;
+}
+
+.img2 img {
+	max-width: 200px;
+}
+
+.img3 {
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+}
+
+.img3 img {
+	max-width: 370px;
 }
