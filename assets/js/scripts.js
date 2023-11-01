@@ -2051,7 +2051,7 @@ jQuery(function ($) {
 // function showSlides() {
 // 	let i;
 // 	const slides = document.getElementsByClassName("slide");
-
+// 	console.log("slides", slides)
 // 	// Hide all slides
 // 	for (i = 0; i < slides.length; i++) {
 // 		slides[i].style.display = "none";
@@ -2071,31 +2071,92 @@ jQuery(function ($) {
 // 	// Call the function again after a certain interval
 // 	setTimeout(showSlides, 6000); // Change slide every 2 seconds
 // }
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelector(".slides");
-    const slideItems = document.querySelectorAll(".slide");
-    const slideCount = slideItems.length;
-    const slideWidth = slideItems[0].clientWidth;
-    let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
+	const slides = document.querySelector(".slides");
+	const slideItems = document.querySelectorAll(".slide");
+	const slideCount = slideItems.length;
+	const slideWidth = slideItems[0].clientWidth;
+	let currentSlide = 0;
 
-    function showSlide(slideIndex) {
-      if (slideIndex < 0) {
-        slideIndex = slideCount - 1;
-      } else if (slideIndex >= slideCount) {
-        slideIndex = 0;
-      }
-      slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-	  console.log(slideIndex,slideWidth)
-	  console.log(slideItems[0].clientWidth,slideItems[0].clientWidth)
-      currentSlide = slideIndex;
-    }
+	function showSlide(slideIndex) {
+		if (slideIndex < 0) {
+			slideIndex = slideCount - 1;
+		} else if (slideIndex >= slideCount) {
+			slideIndex = 0;
+		}
+		slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+		console.log(slideIndex, slideWidth)
+		console.log(slideItems[0].clientWidth, slideItems[0].clientWidth)
+		currentSlide = slideIndex;
+	}
 
-    function nextSlide() {
-      showSlide(currentSlide + 1);
-    }
+	function nextSlide() {
+		showSlide(currentSlide + 1);
+	}
 
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+	setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-    showSlide(currentSlide); // Show the initial slide
-  });
+	showSlide(currentSlide); // Show the initial slide
+});
 
+// document.addEventListener("DOMContentLoaded", function () {
+// 	const slides = document.querySelector(".sliderBox");
+// 	const slideItems = document.querySelectorAll(".box");
+// 	const slideCount = slideItems.length;
+// 	const slideWidth = slideItems[0].clientWidth;
+// 	let currentSlide = 0;
+
+// 	function showSlide(slideIndex) {
+// 		if (slideIndex < 0) {
+// 			slideIndex = slideCount - 1;
+// 		} else if (slideIndex >= slideCount) {
+// 			slideIndex = 0;
+// 		}
+// 		slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+// 		console.log(slideIndex, slideWidth)
+// 		console.log(slideItems[0].clientWidth, slideItems[0].clientWidth)
+// 		currentSlide = slideIndex;
+// 	}
+
+// 	function nextSlide() {
+// 		showSlide(currentSlide + 1);
+// 	}
+
+// 	setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+// 	showSlide(currentSlide); // Show the initial slide
+// });
+// document.addEventListener("DOMContentLoaded", function () {
+// 	console.log(window.innerWidth)
+// 	if (window.innerWidth <= 767) {
+// 		const imageContainer = document.querySelector('.sliderBox');
+// 		imageContainer.style.position = "absolute"
+// 		imageContainer.style.display = "flex"
+// 		const containerWidth = 900; // Total width of the image container
+// 		const scrollSpeed = 2; // Adjust as needed
+
+// 		function animateScroll() {
+// 			const currentLeft = parseInt(getComputedStyle(imageContainer).left) || 0;
+// 			const newLeft = currentLeft - scrollSpeed;
+
+// 			if (newLeft < -containerWidth) {
+// 				imageContainer.style.left = '100%';
+// 			} else {
+// 				imageContainer.style.left = newLeft + 'px';
+// 			}
+// 		}
+
+// 		// Set an interval to animate the scrolling
+// 		const scrollInterval = setInterval(animateScroll, 30); // Adjust the interval as needed
+
+// 		// Pause scrolling on hover (optional)
+// 		imageContainer.addEventListener('mouseover', () => {
+// 			clearInterval(scrollInterval);
+// 		});
+
+// 		// Resume scrolling when not hovering (optional)
+// 		imageContainer.addEventListener('mouseout', () => {
+// 			scrollInterval = setInterval(animateScroll, 30); // Adjust the interval as needed
+// 		});
+// 	}
+// })
