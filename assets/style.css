@@ -3760,6 +3760,7 @@ nav.open {
 
 	.textStats {
 		margin-top: 20px;
+		padding: 0px 10px;
 	}
 
 	h1 {
@@ -5533,11 +5534,13 @@ section .section-devider {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .stats .container .box {
 	color: white;
-	animation: scrollbox 10s linear infinite;
+	/* animation: scrollbox 10s linear infinite; */
 
 }
 
@@ -6176,6 +6179,10 @@ section .section-devider {
 		display: inline-block;
 	}
 
+	.scrolling-container2 {
+		display: inline-block !important;
+	}
+
 	.our-skills .skill .one {
 		font-size: 4em !important;
 		text-align: center;
@@ -6597,6 +6604,18 @@ section .section-devider {
 .scrolling-container .content {
 	display: inline-block;
 	animation: scroll 10s linear infinite;
+}
+
+.scrolling-container2 {
+	display: none;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.scrolling-container2 .content {
+	display: inline-block;
+	animation: scroll 14s linear infinite;
 }
 
 .content img {
