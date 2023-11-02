@@ -5916,7 +5916,12 @@ section .section-devider {
 
 .textStats h3 {
 	letter-spacing: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+
 
 .dblockAbout {
 	display: block;
@@ -6666,7 +6671,23 @@ section .section-devider {
 
 }
 
+@media (min-width: 767px) {
+	.textStats {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.textStats p {
+		padding: 20px 0px;
+		text-align: center;
+	}
+}
+
 @media (max-width: 467px) {
+
+
 
 	.stats2 .container p {
 		text-align: justify !important;
