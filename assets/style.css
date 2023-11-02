@@ -5713,6 +5713,13 @@ section .section-devider {
 	justify-content: center;
 }
 
+.FormLocation {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	justify-content: center;
+}
+
 .socials-icon2 {
 	display: flex;
 	align-items: center;
@@ -6637,4 +6644,33 @@ section .section-devider {
 
 .skills .skill .two {
 	display: none;
+}
+
+.borderInput {
+	display: flex;
+	flex-direction: row;
+	border: 1px #fff solid;
+	color: #fff;
+	width: 50%;
+}
+
+.borderInput input,
+.borderInput textarea {
+	color: #fff;
+	text-transform: none;
+}
+
+.Formsend input,
+.Formsend textarea {
+	text-transform: none;
+
+}
+
+@media (max-width: 467px) {
+
+	.stats2 .container p {
+		text-align: justify !important;
+		font-size: 10px;
+		line-height: 15px;
+	}
 }
