@@ -6469,7 +6469,7 @@ section .section-devider {
 
 .photo {
 	display: none;
-
+	object-fit: cover;
 	width: 120%;
 	max-height: 300px;
 	border-radius: 30%;
@@ -6656,7 +6656,7 @@ section .section-devider {
 	flex-direction: row;
 	border: 1px #fff solid;
 	color: #fff;
-	width: 50%;
+	width: 100%;
 }
 
 .borderInput input,
